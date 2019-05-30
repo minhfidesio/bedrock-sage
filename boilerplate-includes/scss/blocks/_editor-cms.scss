@@ -1,0 +1,205 @@
+.editor-cms {
+	color: $color3;
+	font-size: 14px;
+	line-height: 1.625;
+	//padding: 35px 0;
+
+	h2 {
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 1.1;
+		margin-bottom: 14px;
+
+		@media screen and (min-width: $desktop-small + 1) {
+			line-height: 48px;
+		}
+	}
+
+	h3 {
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 32px;
+		margin-bottom: 25px;
+
+		i {
+			font-size: 18px;
+			margin-right: 10px;
+		}
+	}
+
+	ul {
+		margin-left: 48px;
+		margin-bottom: 25px;
+
+		.content-page & {
+			margin-left: 18px;
+		}
+
+		li {
+			list-style: disc;
+
+			ul,
+			ol {
+				margin-bottom: 5px;
+
+				li {
+					font-size: 14px;
+					line-height: 28px;
+					color: $color5;
+					list-style: none;
+					position: relative;
+
+					&:before {
+						content: '';
+						position: absolute;
+						@include size(4px, 1px);
+						background-color: $color1;
+						top: 50%;
+						transform: translateY(-50%);
+						left: -12px;
+					}
+				}
+			}
+
+			a {
+				color: $color1;
+				font-weight: 700;
+			}
+		}
+	}
+
+	p {
+		line-height: 22px;
+		margin-bottom: 12px;
+
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+
+		a {
+			color: $color2;
+			font-weight: 700;
+		}
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.alignleft {
+		@media screen and (min-width: $desktop-small + 1) {
+			float: left;
+			margin: 10px 25px 25px 0;
+		}
+	}
+
+	.alignright {
+		@media screen and (min-width: $desktop-small + 1) {
+			float: right;
+			margin: 10px 0 25px 25px;
+		}
+	}
+
+	.aligncenter {
+		margin: 0 auto 20px;
+		text-align: center;
+		display: block;
+		clear: both;
+	}
+
+	.wp-caption-text {
+		font-size: 13px;
+		font-style: italic;
+		margin: 5px 0 0;
+	}
+
+	ol {
+		margin-bottom: 20px;
+
+		li {
+			list-style: decimal outside none;
+			margin-left: 15px;
+			padding-left: 5px;
+		}
+	}
+
+	blockquote {
+		&.alignleft {
+			@media screen and (min-width: $desktop-small + 1) {
+				width: 350px;
+				margin-left: -80px;
+				margin-top: 30px;
+
+				+ * {
+					margin-right: 80px;
+					margin-top: 45px;
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+
+	iframe {
+		max-width: 100%;
+	}
+
+	table {
+		margin-bottom: 20px;
+		width: 100%;
+		border-bottom: 1px solid #999;
+		max-width: 100%;
+
+		td {
+			vertical-align: top;
+			padding: 5px 20px;
+			border-right: 1px solid #999;
+			font-size: 14px;
+
+			&:first-child {
+				border-left: 1px solid #999;
+			}
+		}
+
+		th,
+		thead td {
+			background: #ccc;
+			vertical-align: top;
+			padding: 7px 20px;
+			border-left: 1px solid #999;
+			border-top: 1px solid #999;
+			border-bottom: 1px solid #999;
+			font-weight: 400;
+			text-transform: uppercase;
+			font-size: 16px;
+
+			&:last-child {
+				border-right: 1px solid #999;
+			}
+		}
+	}
+
+	dl {
+		margin-bottom: 20px;
+	}
+
+	figure {
+		max-width: 100%;
+		//margin-top: 45px;
+		//margin-bottom: 70px;
+	}
+
+	.table-container {
+		overflow: auto;
+	}
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
+
+	.btn-link {
+		margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,200 @@
+
+{#
+/**
+ * @file
+ *
+ * Available variables
+ * - project_name
+ * - project_short_name
+ * - css_files
+ * - js_files
+ * - html_files
+ * - favicon_url
+ * - img_url
+ * - lang_code
+ * - lang_code_extended
+ * - favicon_color
+ *
+ */
+#}
+
+<div class="block-appointments is-full mt-0">
+    <div class="wrapper">
+        <div class="block-filter">
+            <form action="#" class="form-default form-search" method="get">
+                <div class="radio-group">
+                    <div class="form-group radio-wrap">
+                        <input type="radio" id="c1" name="cc" />
+                        <label for="c1">Tous</label>
+                    </div>
+                    <div class="form-group radio-wrap">
+                        <input type="radio" id="c2" name="cc" />
+                        <label for="c2">Les RDVs</label>
+                    </div>
+                    <div class="form-group radio-wrap">
+                        <input type="radio" id="c3" name="cc" />
+                        <label for="c3">Les partenaires</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="list-appointments">
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}CAF-Photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}CAF.png" alt="Caisse d’Allocations Familales">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">Caisse d’Allocations Familales</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-calendar"></i>Prendre rendez-vous</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}CPAM-Photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}CPAM.png" alt="Caisse Primaire d’Assurance Maladie">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">Caisse Primaire d’Assurance Maladie</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-calendar"></i>Prendre rendez-vous</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}campus-photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}campus.png" alt="Campus de France">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">Campus de France</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-plus"></i>Plus d’informations</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}les-photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}les.png" alt="Les Crous">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">Les Crous</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-plus"></i>Plus d’informations</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}etudiants-photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}etudiants.png" alt="La Mutuelle des Étudiants">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">La Mutuelle des Étudiants</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-calendar"></i>Prendre rendez-vous</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}ofii-photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}ofii.png" alt="OFII">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">OFII</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-plus"></i>Plus d’informations</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}pole-photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}pole.png" alt="Pôle emploi">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">Pôle emploi</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-calendar"></i>Prendre rendez-vous</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}RATP-Photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}RATP.png" alt="RATP">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">RATP</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-plus"></i>Plus d'informations</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}science-photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}science.png" alt="Science Accueil">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">Science Accueil</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-plus"></i>Plus d’informations</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}smerep-photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}smerep.png" alt="SMEREP">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">SMEREP</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-plus"></i>Plus d’informations</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}palaiseau-photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}palaiseau.png" alt="Sous-préfecture de Palaiseau">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">Sous-préfecture de Palaiseau</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-plus"></i>Plus d’informations</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}saclay-photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}saclay.png" alt="Université Paris-Saclay">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">Université Paris-Saclay</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-plus"></i>Plus d'informations</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumb" style="background-image: url('{{ img_url }}ut-photo.png')">
+                    <div class="logo">
+                        <img src="{{ img_url }}ut.png" alt="UT Direccte">
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="title-4">UT Direccte</p>
+                    <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex dolor, ornare et semper …</p>
+                    <a href="#" class="btn-default"><i class="i-plus"></i>Plus d'informations</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

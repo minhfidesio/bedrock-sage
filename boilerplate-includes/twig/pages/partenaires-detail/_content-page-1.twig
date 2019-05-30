@@ -1,0 +1,243 @@
+
+{#
+/**
+ * @file
+ *
+ * Available variables
+ * - project_name
+ * - project_short_name
+ * - css_files
+ * - js_files
+ * - html_files
+ * - favicon_url
+ * - img_url
+ * - lang_code
+ * - lang_code_extended
+ * - favicon_color
+ *
+ */
+#}
+
+<div class="block-content-page has-sidebar mt-0">
+   <div class="wrapper">
+       <div class="content-page">
+           <div class="editor-cms">
+               <h3><i class="i-plus-o"></i>En détail</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel purus ultricies est eleifend molestie eu quis risus. Donec venenatis, enim ultrices tempor cursus, enim turpis lobortis ex, nec pretium velit enim quis felis. Sed commodo nisl nisi, a aliquam mi congue in. Mauris non augue euismod, facilisis dui id, pharetra risus. Phasellus non odio in metus faucibus scelerisque id sit amet risus. Curabitur vel ultrices mauris, quis vehicula diam :</p>
+               <ul>
+                   <li>Lundi, mardi de 14h-17h</li>
+                   <li>Mercredi de 16h à 18h</li>
+                   <li>Vendredi de 13h à 15h</li>
+               </ul>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel purus ultricies est eleifend molestie eu quis risus. Donec venenatis, enim ultrices tempor cursus, enim turpis lobortis ex, nec pretium velit enim quis felis. Sed commodo nisl nisi, a aliquam mi congue in. Mauris non augue euismod, facilisis dui id, pharetra risus. Phasellus non odio in metus faucibus scelerisque id sit amet risus. Curabitur vel ultrices mauris, quis vehicula diam :</p>
+           </div>
+       </div>
+
+       <div class="sidebar">
+           {#<div id="change-loader" class="change-loader" style="/* display: none; */">#}
+               {#<div id="change-loader-inner"></div>#}
+           {#</div>#}
+           {#<form action="#" method="post" class="form-partner">#}
+               {#<p class="title">Prise de rendez en ligne</p>#}
+               {#<div class="form-step is-active">#}
+                  {#<div class="form-group">#}
+                      {#<label for="">Motif du rendez-vous</label>#}
+                      {#<select name="" id="" class="select2">#}
+                          {#<option value="">Lorem ipsum</option>#}
+                          {#<option value="">Lorem ipsum 1</option>#}
+                          {#<option value="">Lorem ipsum 2</option>#}
+                      {#</select>#}
+                  {#</div>#}
+                   {#<div class="form-group">#}
+                       {#<label for="">Selectionner la date</label>#}
+                       {#<input type="text" placeholder="23/05/2019">#}
+                   {#</div>#}
+                   {#<a href="#" class="btn-default" tabindex="0"><i class="i-calendar"></i>Prendre rendez-vous</a>#}
+               {#</div>#}
+               {#<div class="form-step">#}
+                   {#<span class="icon"><i class="i-check"></i></span>#}
+                   {#<p class="des">Votre rendez-vous est bien enregistré pour le</p>#}
+                   {#<p class="datetime">Lundi 25 mai 2019</p>#}
+               {#</div>#}
+           {#</form>#}
+           <div class="form-partner">
+               <p class="title">Prise de rendez en ligne</p>
+               <div class="ap_wrapper1">
+                   <div id="img-thumbnail" class="img-thumbnail ap-dashboard ap-front">
+
+
+                       <div id="change-loader" class="change-loader">
+                           <div id="change-loader-inner"></div>
+                       </div>
+                       <div id="ap_fornt_main_div" style="">
+                           <div class="row ap-logo">
+
+                           </div>
+                           <div id="step1">
+                               <!-- Step 1 -->
+                               <form style="margin-bottom: 0;" action="" method="POST" id="step_01" name="step_01" class="form-partner">
+                                   <div id="1" class="ap-steps-detail form-step is-active">
+                                       <div class="row service-form">
+                                           <div class="ap-category form-group">
+                                               <label>Motif du rendez-vous</label>
+                                               <select class="form-control " id="groups" name="service_name">
+                                                   <option value="default">--Select--</option>
+                                                   <!-- <optgroup label=""> -->
+
+                                                   <option value="2">Partenaire 01 - Service 1</option>
+
+                                                   <option value="3">Partenaire 01 - Service 2</option>
+
+                                                   <!-- </optgroup> -->
+                                               </select>
+                                           </div>
+                                           <div class="ap-employee form-group">
+                                               <label>Staff</label>
+                                               <select class="form-control staff" id="sub_groups" name="staff_member"><option value="0">--Select--</option></select>
+                                           </div>
+                                           <div class="col-md-3 col-sm-6 ap-dates form-group">
+                                               <label> Date</label>
+                                               <input id="apt_date" name="apt_date" placeholder="Select date @ eg 05/26/2019" class="form-control ap-date hasDatepicker" type="text">
+
+                                           </div>
+                                       </div>
+
+
+                                   </div>
+                                   <!-- Step 1 -->
+                                   <div class="ap-step-link">
+                                       <input type="hidden" class="ap_location_id" name="ap_location_id" id="ap_location_id" value="2">
+                                       <button id="step1_next" type="button" class="btn-default"><i class="i-calendar"></i>Prendre rendez-vous</button>
+                                   </div>
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+               <style>
+                   #staff_off_text{
+                       color: #337ab7 !important;
+                   }
+
+                   .alert_box{
+                       background: #304CD8;
+                       background: -webkit-linear-gradient(left, #304CD8 0%, #9F3762 100%);
+                       background: -ms-linear-gradient(left, #304CD8 0%, #9F3762 100%);
+                       background: linear-gradient(to right, #304CD8 0%, #9F3762 100%);
+                       color: #fff;
+                       font-size: 25px;
+                       padding: 35px;
+                       text-align: center;
+                   }
+
+                   #dd-w-0 .dd-c .dd-s{
+                       background:#337ab7 !important;
+                   }
+                   .step3-form {
+                       min-height: 90px !important;
+                   }
+                   #date_01{
+                       height:70px !important;
+                       line-height: 70px;
+                       width: 100%;
+                       border-radius: 5px;
+                       text-align:center;
+                   }
+
+                   /*.ap-steps-detail1 p{
+                       float:left !important;
+                   }*/
+                   .ap-steps-detail1 p{
+                       padding-left: 20px;
+                       padding-right: 20px;
+                   }
+                   /*.ap-steps-detail3 p{
+                       float:left !important;
+                   }*/
+                   .ap-steps-detail3 p{
+                       padding-right: 20px;
+                       padding-left: 20px;
+                   }
+                   .swiper-container{
+                       overflow:visible !important;
+                   }
+                   .signup-info{
+                       clear:both !important;
+                   }
+                   .service_tag, .staff_tag, .date_tag, .service_price_tag, .time_tag {
+
+                       font-style: oblique !important;
+                   }
+                   #date_01{
+                       font-size:30px !important;
+                   }
+                   .b_closed{
+                       font-size:25px !important;
+                   }
+                   input[type="tel"]{
+                       padding-left: 50px !important;
+                   }
+                   #app_business_name{
+                       font-size:18px !important;
+                       padding-top:10px !important;
+                   }
+                   #appoint_register, #appoint_login{
+                       color: #fff !important;
+                       background-color: #f0ad4e !important;;
+                       border-color: #eea236 !important;;
+                   }
+
+                   #register_button{
+                       color: #fff !important;
+                       background-color: #c9302c !important;
+                       border-color: #ac2925 !important;
+                   }
+
+                   #login_button{
+                       color: #fff !important;
+                       background-color: #449d44 !important;
+                       border-color: #398439 !important;
+                   }
+                   #img-thumbnail img{
+                       transform: none !important;
+                       transition: none !important;
+                   }
+                   .ap-steps .active span , .ap-steps .complete span, .ap-step-link .step-right,.ap-step-link .step-left, .aps-date .tm-value,.step4-form .save ,.social-info .social li{
+                       background-color:#337ab7 !important;
+                   }
+                   .ap-dashboard .form-control:focus, .stp-duration li {
+                       border: 2px solid #337ab7 !important;
+                   }
+                   .stp-duration .tm-value {
+                       color: #337ab7 !important;
+                   }
+
+                   .app_logo img {
+                       height: 150px !important;
+                       width: 150px !important;
+                   }
+
+
+
+                   #ap_slots{
+                       width:24% !important;
+                   }
+
+                   .social-info {
+                       margin-top: 80px !important;
+                   }
+
+                   .pre_bg{
+                       background-color:white !important;
+                   }
+
+                   div#existing:focus ,div#new:focus {
+                       outline: none !important;
+                   }
+               </style>
+           </div>
+       </div>
+   </div>
+</div>
+{#<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="position: absolute; top: 1189px; left: 586.156px; z-index: 1; display: block;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">May</span>&nbsp;<span class="ui-datepicker-year">2019</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th scope="col"><span title="Monday">Mo</span></th><th scope="col"><span title="Tuesday">Tu</span></th><th scope="col"><span title="Wednesday">We</span></th><th scope="col"><span title="Thursday">Th</span></th><th scope="col"><span title="Friday">Fr</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">1</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">2</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">3</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">4</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">5</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">6</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">7</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">8</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">9</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">10</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">11</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">12</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">13</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">14</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">15</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">16</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">17</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">18</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">19</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">20</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">21</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">22</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">23</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">24</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">25</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">26</span></td><td class=" ui-datepicker-days-cell-over ui-datepicker-unselectable ui-state-disabled undefined ui-datepicker-current-day ui-datepicker-today"><span class="ui-state-default">27</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">28</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">29</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">30</span></td><td class=" ui-datepicker-unselectable ui-state-disabled undefined"><span class="ui-state-default">31</span></td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div>#}

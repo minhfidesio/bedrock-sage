@@ -1,0 +1,71 @@
+.group-btn {
+	display: flex;
+	flex-wrap: wrap;
+
+	.btn-arrow {
+		&:not(:last-child) {
+			margin-right: 45px;
+		}
+	}
+}
+
+.btn {
+	&-arrow {
+		color: $color3;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 19px;
+		display: flex;
+		align-items: center;
+
+		&:hover {
+			i {
+				transform: translateX(10px);
+			}
+		}
+
+		i {
+			color: $color2;
+			font-size: 40px;
+			margin-left: 15px;
+			transition: all 0.3s ease;
+		}
+	}
+
+	&-link {
+		color: $color3;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 19px;
+		display: flex;
+		align-items: center;
+
+		i {
+			color: $color2;
+			font-size: 40px;
+			margin-left: 15px;
+			transition: all 0.3s ease;
+		}
+	}
+
+	&-default {
+		border-radius: 25px;
+		background-color: $color2;
+		padding: 13px 20px;
+		color: #fff;
+		font-size: 13px;
+		display: inline-block;
+		min-width: 75px;
+		text-align: center;
+		transition: all 0.3s ease;
+
+		&:hover {
+			background-color: $color1;
+		}
+
+		i {
+			font-size: 18px;
+			margin-right: 14px;
+		}
+	}
+}

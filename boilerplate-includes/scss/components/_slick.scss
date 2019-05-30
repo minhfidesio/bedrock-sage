@@ -1,0 +1,51 @@
+.is-slick-control {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+
+	@media screen and (min-width: $desktop-small + 1) {
+		justify-content: center;
+		width: auto;
+	}
+
+	.slick-prev {
+		margin-right: 15px;
+
+		@media screen and (min-width: $desktop-small + 1) {
+			margin-right: 54px;
+		}
+	}
+
+	.slick-next {
+		margin-left: 15px;
+
+		@media screen and (min-width: $desktop-small + 1) {
+			margin-left: 54px;
+		}
+	}
+}
+
+.slick-arrow {
+	font-size: 40px;
+
+	&.slick-next {
+		right: 0;
+	}
+
+	&.slick-prev {
+		left: 0;
+	}
+
+	&.slick-disabled {
+		i {
+			&:before {
+				color: $color6;
+			}
+		}
+	}
+}
+
+.slick-slider {
+	touch-action: auto;
+	-ms-touch-action: auto;
+}

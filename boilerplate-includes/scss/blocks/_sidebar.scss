@@ -1,0 +1,37 @@
+.sidebar {
+	min-height: 408px;
+	border: 1px solid $color6;
+	box-shadow: 0 0 45px 0 rgba(#000,0.04);
+	text-align: center;
+	background-color: #fff;
+	max-width: 377px;
+	margin: 40px auto 0;
+	position: relative;
+
+	@media screen and (min-width: $desktop-small + 1) {
+		width: 377px;
+		margin-left: 0;
+	}
+
+	.title {
+		border-bottom: 1px solid $color6;
+		padding: 25px 15px;
+		color: $color5;
+		font-size: 17px;
+		font-weight: 700;
+		line-height: 22px;
+	}
+
+	#change-loader {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+
+		#change-loader-inner {
+			margin: 0;
+			left: auto;
+			top: auto;
+		}
+	}
+}

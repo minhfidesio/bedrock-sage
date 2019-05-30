@@ -1,0 +1,32 @@
+.block-banner-inter {
+	font-size: 18px;
+	padding-bottom: 30px;
+	position: relative;
+
+	@media screen and (min-width: $tablet-medium + 1) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.content {
+		text-align: center;
+		margin-top: 30px;
+
+		@media screen and (min-width: $tablet-medium + 1) {
+			margin-top: 0;
+		}
+
+		.wrapper {
+			max-width: 800px;
+		}
+
+		.title-5 {
+			margin-bottom: 20px;
+		}
+
+		.des {
+			font-size: 17px;
+			line-height: 30px;
+		}
+	}
+}

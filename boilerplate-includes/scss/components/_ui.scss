@@ -1,0 +1,71 @@
+.ui-datepicker {
+	font-family: $font-1;
+	padding: 0;
+	border: 1px solid $color11;
+
+	.ui-widget-header {
+		background-color: $color2;
+		color: #fff;
+		border-radius: 0;
+		border: 0;
+		border-bottom: 1px solid $color1;
+	}
+
+	th {
+		background: $color2;
+	}
+
+	.ui-datepicker-next {
+		.ui-icon {
+			background-image: none;
+			position: relative;
+			text-indent: 0;
+			font-size: 0;
+			@include size(25px, 25px);
+
+			&:after {
+				font-family: 'portail-gate' !important;
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				content: '\e902';
+				font-size: 20px;
+				color: #fff;
+			}
+		}
+	}
+
+	.ui-datepicker-prev {
+		.ui-icon {
+			background-image: none;
+			position: relative;
+			text-indent: 0;
+			font-size: 0;
+			@include size(25px, 25px);
+
+			&:after {
+				font-family: 'portail-gate' !important;
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				content: '\e901';
+				font-size: 20px;
+				color: #fff;
+			}
+		}
+	}
+
+	.ui-state-default, .ui-widget-content .ui-state-default {
+		background-color: $color6;
+	}
+}

@@ -1,0 +1,100 @@
+{
+    "key": "group_56dfc64beb790",
+    "title": "Placement de code",
+    "fields": [
+        {
+            "key": "field_56dfc667b9993",
+            "label": "en-tête",
+            "name": "within_head",
+            "type": "textarea",
+            "instructions": "Place le code qui va apparaître entre l'élément &lt;head> du site.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_56dfc691b9994",
+            "label": "Après la balise d'ouverture <body>",
+            "name": "after_opening_body",
+            "type": "textarea",
+            "instructions": "Place le code qui va apparaître après la balise &lt;body>.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_56dfc6adb9995",
+            "label": "Avant la balise fermante Body",
+            "name": "before_closing_body",
+            "type": "textarea",
+            "instructions": "Place le code qui va apparaître immédiatement avant la balise fermante &lt;\/body>.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_56dff7c6a1078",
+            "label": "Gérer la balise Google",
+            "name": "google_tag_manager",
+            "type": "textarea",
+            "instructions": "Google Tag Manager code",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-code-placement"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Place tracking and other code.",
+    "modified": 1556784311
+}

@@ -1,0 +1,31 @@
+.block-clients {
+	background-color: #fff;
+	padding: 40px 0;
+	overflow: hidden;
+
+	body:not(.home) & {
+		border-top: 1px solid $color6;
+	}
+
+	.list-logos {
+		padding: 0 40px;
+
+		.slick-slide {
+			width: 200px;
+			display: inline-block;
+			margin: 0 20px;
+		}
+
+		img {
+			max-height: 56px;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

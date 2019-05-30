@@ -1,0 +1,170 @@
+.block-appointments {
+	position: relative;
+	overflow: hidden;
+
+	&.is-full {
+		background-color: $color7;
+
+		.wrapper {
+			@media screen and (min-width: $tablet-medium + 1) {
+				padding-left: 30px;
+			}
+
+			@media screen and (min-width: $desktop-medium + 1) {
+				padding-left: 0;
+			}
+		}
+
+		.list-appointments {
+			display: flex;
+			flex-wrap: wrap;
+			padding-top: 0;
+
+			.item {
+				margin-top: 70px;
+				width: 100%;
+
+				@media screen and (min-width: $tablet) {
+					width: calc((100% - 30px)/2);
+
+					&:not(:nth-child(2n + 1)) {
+						margin-left: 30px;
+					}
+				}
+
+				@media screen and (min-width: $desktop-medium + 1) {
+					width: calc((100% - 90px)/4);
+
+					&:not(:nth-child(4n + 1)) {
+						margin-left: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.wrapper {
+		min-height: 630px;
+		padding-top: 35px;
+		padding-bottom: 35px;
+		overflow: hidden;
+		background-color: $color7;
+
+		@media screen and (min-width: $tablet-medium + 1) {
+			padding-left: calc(30% + 40px);
+			background-color: transparent;
+		}
+
+		@media screen and (min-width: $desktop-medium) {
+			padding-left: calc(1310px/4 - 10px);
+		}
+	}
+
+	.list-appointments {
+		margin-left: auto;
+		padding-top: 70px;
+		overflow: hidden;
+
+		.slick-track ,
+		.slick-list {
+			overflow: visible!important;
+			display: flex;
+		}
+
+		.slick-slide {
+			width: 290px;
+			flex-shrink: 0;
+
+			+ .slick-slide {
+				margin-left: 30px;
+			}
+
+			> div {
+				height: 100%;
+			}
+
+			.item {
+				height: 100%;
+			}
+		}
+
+		.item {
+			padding: 0 40px 36px;
+			border: 1px solid $color6;
+			border-radius: 4px;
+			background-color: #fff;
+			display: flex!important;
+			flex-direction: column;
+
+			.thumb {
+				margin: -36px auto 20px;
+				background-size: cover;
+				padding: 15px;
+				@include size(100%, 210px);
+				border-radius: 4px;
+				max-width: 210px;
+
+				.logo {
+					padding: 10px;
+					border-radius: 4px;
+					background-color: #fff;
+					display: inline-flex;
+					height: 75px;
+					min-width: 75px;
+					justify-content: center;
+					align-items: center;
+
+					img {
+						max-height: 100%;
+						margin: 0 auto;
+					}
+				}
+			}
+
+			.content {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+
+				.title-4 {
+					min-height: 64px;
+					margin-bottom: 10px;
+				}
+
+				.des {
+					color: $color5;
+					font-size: 14px;
+					line-height: 22px;
+					margin-bottom: 23px;
+				}
+
+				.btn-default {
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-top: auto;
+				}
+			}
+		}
+	}
+
+	.feature {
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		display: none;
+		background-position: left center;
+		background-size: cover;
+
+		@media screen and (min-width: $tablet-medium + 1) {
+			display: block;
+			width: 30%;
+		}
+
+		@media screen and (min-width: $desktop-medium) {
+			width: calc((1310px/4) + (100% - 1310px) / 2 - 40px);
+		}
+	}
+}

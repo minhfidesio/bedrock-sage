@@ -1,0 +1,111 @@
+.block-banner {
+	position: relative;
+	display: flex;
+	flex-direction: column-reverse;
+
+	@media screen and (min-width: $tablet-medium + 1) {
+		display: block;
+	}
+
+	.wrapper {
+		@media screen and (min-width: $tablet-medium + 1) {
+			display: flex;
+			min-height: 645px;
+		}
+
+		.content {
+			padding-top: 30px;
+
+			@media screen and (min-width: $tablet-medium + 1) {
+				flex-basis: 50%;
+				padding-top: 187px;
+			}
+
+			.title-1 {
+				margin-bottom: 5px;
+			}
+
+			.title-2 {
+				@media screen and (max-width: $tablet-medium) {
+					font-size: 18px;
+				}
+			}
+
+			.detail {
+				color: $color5;
+				font-size: 17px;
+				line-height: 30px;
+				margin-top: 20px;
+
+				@media screen and (min-width: $tablet-medium + 1) {
+					margin-top: 40px;
+				}
+			}
+
+			.group-btn {
+				margin-top: 20px;
+
+				@media screen and (min-width: $tablet-medium + 1) {
+					margin-top: 84px;
+				}
+
+				.btn-arrow {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+
+	.feature {
+		background-size: cover;
+		background-position: center center;
+		min-height: 280px;
+		order: 1;
+
+		@media screen and (min-width: $tablet-medium + 1) {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: calc((1310px/12*5) + (100% - 1310px) / 2 + 18px);
+			height: 100%;
+			order: 2;
+		}
+
+
+		.info {
+			background-color: rgba($color3, 0.96);
+			padding: 50px;
+			position: absolute;
+			bottom: 155px;
+			left: 0;
+			width: 320px;
+
+			.btn-close {
+				position: absolute;
+				right: 30px;
+				top: 30px;
+			}
+
+			.icon {
+				font-size: 40px;
+				display: block;
+				margin-bottom: 25px;
+			}
+
+			.title {
+				color: #fff;
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 32px;
+				margin-bottom: 15px;
+			}
+
+			.des {
+				opacity: 0.5;
+				color: #fff;
+				font-size: 17px;
+				line-height: 26px;
+			}
+		}
+	}
+}

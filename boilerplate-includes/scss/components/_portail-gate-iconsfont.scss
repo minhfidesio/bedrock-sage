@@ -1,0 +1,138 @@
+@font-face {
+	font-family: 'portail-gate';
+	src:  url('../fonts/portail-gate.eot?grj1dc#iefix') format('embedded-opentype'),
+	url('../fonts/portail-gate.ttf?grj1dc') format('truetype'),
+	url('../fonts/portail-gate.woff?grj1dc') format('woff'),
+	url('../fonts/portail-gate.svg?grj1dc#portail-gate') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='i-'], [class*=' i-'] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'portail-gate' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.i-print:before {
+	content: '\e91d';
+	color: #7c6cad;
+}
+.i-question-2:before {
+	content: '\e918';
+	color: #7c6cad;
+}
+.i-facebook:before {
+	content: '\e91c';
+	color: #9d87df;
+}
+.i-arrow-down-o:before {
+	content: '\e91b';
+}
+.i-check:before {
+	content: '\e91a';
+	color: #7c6cad;
+}
+.i-plus-o:before {
+	content: '\e919';
+	color: #9d87df;
+}
+.i-download:before {
+	content: '\e917';
+	color: #9d87df;
+}
+.i-studyblack:before {
+	content: '\e911';
+	color: #9d87df;
+}
+.i-startup:before {
+	content: '\e912';
+	color: #9d87df;
+}
+.i-reading:before {
+	content: '\e913';
+	color: #9d87df;
+}
+.i-flask:before {
+	content: '\e914';
+	color: #9d87df;
+}
+.i-book:before {
+	content: '\e915';
+	color: #9d87df;
+}
+.i-innovation:before {
+	content: '\e916';
+	color: #9d87df;
+}
+.i-plus:before {
+	content: '\e910';
+}
+.i-arrow-angel-right:before {
+	content: '\e90a';
+}
+.i-arrow-angel-left:before {
+	content: '\e90b';
+}
+.i-arrow-angel-down:before {
+	content: '\e90c';
+}
+.i-arrow-angel-up:before {
+	content: '\e90d';
+}
+.i-alert:before {
+	content: '\e900';
+	color: #ececec;
+}
+.i-arrow-left:before {
+	content: '\e901';
+	color: #9d87df;
+}
+.i-arrow-right:before {
+	content: '\e902';
+	color: #9d87df;
+}
+.i-arrow-down:before {
+	content: '\e90e';
+	color: #9d87df;
+}
+.i-arrow-up:before {
+	content: '\e90f';
+	color: #9d87df;
+}
+.i-calendar:before {
+	content: '\e903';
+	color: #fff;
+}
+.i-clock:before {
+	content: '\e904';
+	color: #7c6cad;
+}
+.i-close:before {
+	content: '\e905';
+	color: #75737b;
+}
+.i-email:before {
+	content: '\e906';
+	color: #9d87df;
+}
+.i-location:before {
+	content: '\e907';
+	color: #7c6cad;
+}
+.i-question:before {
+	content: '\e908';
+	color: #7c6cad;
+}
+.i-search:before {
+	content: '\e909';
+	color: #fff;
+}

@@ -1,0 +1,50 @@
+.breadcrumbs {
+	//position: absolute;
+	//left: 0;
+	//right: 0;
+	padding: 15px 0;
+
+
+	@media screen and (min-width: $tablet-medium + 1) {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+	}
+
+	span {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		font-size: 14px;
+
+		&:not(:last-child) {
+			color: $color3;
+			padding-right: 12px;
+			margin-right: 17px;
+
+			&:after {
+				content: '\e90a';
+				font-family: 'portail-gate' !important;
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				position: absolute;
+				right: -10px;
+				top: 50%;
+				transform: translateY(-50%);
+				color: $color10;
+				font-size: 13px;
+			}
+		}
+
+		a {
+			color: inherit;
+		}
+	}
+}

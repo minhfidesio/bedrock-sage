@@ -1,0 +1,52 @@
+#tarteaucitronRoot {
+	#tarteaucitronAlertBig {
+		font-family: $font-1!important;
+	}
+
+	#tarteaucitronPercentage {
+		background-color: $color2!important;
+	}
+}
+#tarteaucitronAlertBig {
+	#tarteaucitronDisclaimerAlert {
+		font-family: $font-1!important;
+		font-size: 12px!important;
+	}
+
+	#tarteaucitronPersonalize {
+		border-radius: 25px;
+		background-color: $color2!important;
+		padding: 8px 15px;
+		color: #fff;
+		font-size: 13px!important;
+		font-family: $font-1!important;
+		display: inline-block;
+		min-width: 75px;
+		text-align: center;
+		transition: all 0.3s ease;
+
+		&:hover {
+			background-color: $color1;
+		}
+
+		i {
+			font-size: 18px;
+			margin-right: 14px;
+		}
+	}
+
+	#tarteaucitronCloseAlert {
+		border-radius: 25px;
+		padding: 8px 15px;
+		color: $color2;
+		font-size: 13px;
+		display: inline-block;
+		min-width: 75px;
+		text-align: center;
+		transition: all 0.3s ease;
+
+		&:hover {
+			background-color: $color6;
+		}
+	}
+}

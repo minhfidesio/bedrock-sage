@@ -1,0 +1,52 @@
+
+{#
+/**
+ * @file
+ *
+ * Available variables
+ * - project_name
+ * - project_short_name
+ * - css_files
+ * - js_files
+ * - html_files
+ * - favicon_url
+ * - img_url
+ * - lang_code
+ * - lang_code_extended
+ * - favicon_color
+ *
+ */
+#}
+
+<div class="block-feature mt-0">
+    <div id="breadcrumbs" class="breadcrumbs">
+        <div class="wrapper">
+            <!-- Breadcrumb NavXT 6.3.0 -->
+            <span property="itemListElement" typeof="ListItem">
+                <a property="item" typeof="WebPage" title="Go to Accueil." href="https://portail-gate.parissaclay.staging.fides.io" class="home">
+                    <span property="name">Accueil</span></a>
+                <meta property="position" content="1">
+            </span>
+            <span property="itemListElement" typeof="ListItem">
+                <a property="item" typeof="WebPage" title="Go to Accueil." href="https://portail-gate.parissaclay.staging.fides.io" class="home">
+                    <span property="name">Partenaires et RDV</span></a>
+                <meta property="position" content="1">
+            </span>
+            <span class="post post-page current-item">Caisse d’Allocations Familiales</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="thumb">
+            <img src="{{ img_url }}cpam.png" alt="CAF">
+        </div>
+        <h1 class="title-5">Caisse d’Allocations Familiales</h1>
+        <div class="des">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim scelerisque suscipit. Aenean ultrices est sed orci gravida efficitur. Cras at laoreet metus, ac commodo augue. In imperdiet sagittis consectetur. In hac habitasse platea dictumst. Aliquam id tempus lacus.</p>
+            <div class="group-btn">
+                <a href="#" class="btn-default">Voir le site web</a>
+                <a href="#" class="btn-link">Partager sur Facebook <i class="i-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="feature" style="background-image: url('{{ img_url }}detail.png')"></div>
+</div>

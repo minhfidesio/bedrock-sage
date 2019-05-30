@@ -1,0 +1,57 @@
+.select2-container {
+	width: 100%!important;
+	text-align: left;
+
+	.select2-selection {
+		border: 1px solid $color6;
+		background-color: #fff;
+		box-shadow: 0 0 40px 0 rgba(#000,0.01);
+	}
+
+	.select2-selection__arrow {
+		position: relative;
+		height: 100%!important;
+
+		&:after {
+			font-family: 'portail-gate' !important;
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			content: '\e91b';
+			font-size: 23px;
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: translateY(-50%);
+			color: $color2;
+			font-size: 28px;
+		}
+
+		b {
+			display: none;
+		}
+	}
+
+	.select2-results__option--highlighted[aria-selected] {
+		background-color: $color2;
+	}
+}
+
+.select2-container--default {
+	.select2-selection--single {
+		height: auto;
+
+		.select2-selection__rendered {
+			padding: 12px 20px;
+			color: #C9C8C8;
+			font-size: 14px;
+			line-height: 22px;
+			text-align: center;
+		}
+	}
+}

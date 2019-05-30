@@ -1,0 +1,265 @@
+
+{#
+/**
+ * @file
+ *
+ * Available variables
+ * - project_name
+ * - project_short_name
+ * - css_files
+ * - js_files
+ * - html_files
+ * - favicon_url
+ * - img_url
+ * - lang_code
+ * - lang_code_extended
+ * - favicon_color
+ *
+ */
+#}
+
+<div class="block-content-page has-sidebar mt-0">
+   <div class="wrapper">
+       <div class="content-page">
+           <div class="editor-cms">
+               <h3><i class="i-plus-o"></i>En détail</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel purus ultricies est eleifend molestie eu quis risus. Donec venenatis, enim ultrices tempor cursus, enim turpis lobortis ex, nec pretium velit enim quis felis. Sed commodo nisl nisi, a aliquam mi congue in. Mauris non augue euismod, facilisis dui id, pharetra risus. Phasellus non odio in metus faucibus scelerisque id sit amet risus. Curabitur vel ultrices mauris, quis vehicula diam :</p>
+               <ul>
+                   <li>Lundi, mardi de 14h-17h</li>
+                   <li>Mercredi de 16h à 18h</li>
+                   <li>Vendredi de 13h à 15h</li>
+               </ul>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel purus ultricies est eleifend molestie eu quis risus. Donec venenatis, enim ultrices tempor cursus, enim turpis lobortis ex, nec pretium velit enim quis felis. Sed commodo nisl nisi, a aliquam mi congue in. Mauris non augue euismod, facilisis dui id, pharetra risus. Phasellus non odio in metus faucibus scelerisque id sit amet risus. Curabitur vel ultrices mauris, quis vehicula diam :</p>
+           </div>
+       </div>
+
+       <div class="sidebar">
+           {#<form action="#" method="post" class="form-partner">#}
+               {#<p class="title">Prise de rendez en ligne</p>#}
+               {#<div class="form-step is-active">#}
+                  {#<div class="form-group">#}
+                      {#<label for="">Motif du rendez-vous</label>#}
+                      {#<select name="" id="" class="select2">#}
+                          {#<option value="">Lorem ipsum</option>#}
+                          {#<option value="">Lorem ipsum 1</option>#}
+                          {#<option value="">Lorem ipsum 2</option>#}
+                      {#</select>#}
+                  {#</div>#}
+                   {#<div class="form-group">#}
+                       {#<label for="">Selectionner la date</label>#}
+                       {#<input type="text" placeholder="23/05/2019">#}
+                   {#</div>#}
+                   {#<a href="#" class="btn-default" tabindex="0"><i class="i-calendar"></i>Prendre rendez-vous</a>#}
+               {#</div>#}
+               {#<div class="form-step">#}
+                   {#<span class="icon"><i class="i-check"></i></span>#}
+                   {#<p class="des">Votre rendez-vous est bien enregistré pour le</p>#}
+                   {#<p class="datetime">Lundi 25 mai 2019</p>#}
+               {#</div>#}
+           {#</form>#}
+           <div class="form-partner">
+               <p class="title">Prise de rendez en ligne</p>
+               <div class="ap_wrapper1">
+                   <div id="img-thumbnail" class="img-thumbnail ap-dashboard ap-front">
+
+
+                       <div id="change-loader" class="change-loader">
+                           <div id="change-loader-inner"></div>
+                       </div>
+                       <div id="ap_fornt_main_div" style="">
+                           <div class="row ap-logo">
+
+                           </div>
+
+                           <!-- Step 2 -->
+
+                           <!-- Step 3 -->
+                           <div id="3" class="ap-steps-detail3">
+
+                               <div class="row signup-info">
+                                   <button id="register_button" onclick="return New();" class="btn-default btn-danger register-link" type="button" href="#new">Nouvel utilisateur</button>
+                                   <button id="login_button" onclick="return existing();" class="btn-default btn-success register-link" type="button" href="#existing">Utilisateur existant</button>
+                               </div>
+
+                               <!-- Step 3 -->
+                               <div id="new" class="row service-form form-group">
+                                   <form style="margin-bottom: 0;" action="" method="POST" id="ap_register" name="ap_register">
+                                       <input type="hidden" class="ap_location_id" name="ap_location_id" id="ap_location_id" value="2">
+                                       <div class="col-md-6 col-sm-6 step3-form">
+                                           <input type="text" class="form-control" name="appoint_username" id="appoint_username" placeholder="Enter Usename">
+                                       </div>
+                                       <div class="col-md-6 col-sm-6 step3-form">
+                                           <input type="email" class="form-control" name="client_email" id="client_email" placeholder="Enter Email Address">
+                                       </div>
+                                       <div class="col-md-6 col-sm-6 step3-form">
+                                           <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Enter Name">
+                                       </div>
+                                       <div class="col-md-6 col-sm-6 step3-form">
+                                           <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Enter Last Name">
+                                       </div>
+                                       <div class="col-md-6 col-sm-6 step3-form">
+                                           <input type="password" class="form-control" name="client_password" id="client_password" placeholder="Enter Password">
+                                       </div>
+                                       <div class="col-md-6 col-sm-6 step3-form">
+                                           <input type="tel" class="phone form-control" name="client_contact" id="client_contact" placeholder="Phone">
+                                       </div>
+                                       <input type="hidden" class="form-control" name="client_full_name" id="client_full_name">
+
+                                       <div class="col-md-6 col-sm-6 step3-form">
+                                           <a class="btn-default btn-warning" id="appoint_register" onclick="return appoint_register();">Register</a>
+                                       </div>
+
+                                   </form>
+                               </div>
+
+                               <div id="existing" class="row service-form" style="display:none;">
+                                   <form style="margin-bottom: 0;" action="" method="POST" id="ap_login" name="ap_login">
+                                       <input type="hidden" class="ap_location_id" name="ap_location_id" id="ap_location_id" value="2">
+                                       <div class="col-md-6 col-sm-12 col-xm-12 step3-form">
+                                           <input type="text" id="ap_email" class="form-control" name="ap_email" placeholder="Enter Email">
+                                       </div>
+                                       <div class="col-md-6 col-sm-12 col-xm-12 step3-form">
+                                           <input type="password" class="form-control" id="ap_password" name="ap_password" placeholder="Enter Password">
+                                       </div>
+                                       <div class="col-md-4 col-sm-12 col-xm-12 step3-form">
+                                           <a class="btn-default btn-login" id="appoint_login" onclick="return appoint_login();">Login</a>
+                                       </div>
+                                   </form>
+                               </div>
+
+
+                           </div>
+                           <div class="ap-step-link">
+
+                               <button href="#step2" onclick="return step3_back();" class="btn-step-left btn-default" type="button">Back</button>
+                               <button id="stepnext3" type="button" onclick="return step3_next();" class="btn-step-right btn-default">Next</button>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+               <style>
+                   #staff_off_text{
+                       color: #337ab7 !important;
+                   }
+
+                   .alert_box{
+                       background: #304CD8;
+                       background: -webkit-linear-gradient(left, #304CD8 0%, #9F3762 100%);
+                       background: -ms-linear-gradient(left, #304CD8 0%, #9F3762 100%);
+                       background: linear-gradient(to right, #304CD8 0%, #9F3762 100%);
+                       color: #fff;
+                       font-size: 25px;
+                       padding: 35px;
+                       text-align: center;
+                   }
+
+                   #dd-w-0 .dd-c .dd-s{
+                       background:#337ab7 !important;
+                   }
+                   .step3-form {
+                       min-height: 90px !important;
+                   }
+                   #date_01{
+                       height:70px !important;
+                       line-height: 70px;
+                       width: 100%;
+                       border-radius: 5px;
+                       text-align:center;
+                   }
+
+                   /*.ap-steps-detail1 p{
+                       float:left !important;
+                   }*/
+                   .ap-steps-detail1 p{
+                       padding-left: 20px;
+                       padding-right: 20px;
+                   }
+                   /*.ap-steps-detail3 p{
+                       float:left !important;
+                   }*/
+                   .ap-steps-detail3 p{
+                       padding-right: 20px;
+                       padding-left: 20px;
+                   }
+                   .swiper-container{
+                       overflow:visible !important;
+                   }
+                   .signup-info{
+                       clear:both !important;
+                   }
+                   .service_tag, .staff_tag, .date_tag, .service_price_tag, .time_tag {
+
+                       font-style: oblique !important;
+                   }
+                   #date_01{
+                       font-size:30px !important;
+                   }
+                   .b_closed{
+                       font-size:25px !important;
+                   }
+                   input[type="tel"]{
+                       padding-left: 50px !important;
+                   }
+                   #app_business_name{
+                       font-size:18px !important;
+                       padding-top:10px !important;
+                   }
+                   #appoint_register, #appoint_login{
+                       color: #fff !important;
+                       background-color: #f0ad4e !important;;
+                       border-color: #eea236 !important;;
+                   }
+
+                   #register_button{
+                       color: #fff !important;
+                       background-color: #c9302c !important;
+                       border-color: #ac2925 !important;
+                   }
+
+                   #login_button{
+                       color: #fff !important;
+                       background-color: #449d44 !important;
+                       border-color: #398439 !important;
+                   }
+                   #img-thumbnail img{
+                       transform: none !important;
+                       transition: none !important;
+                   }
+                   .ap-steps .active span , .ap-steps .complete span, .ap-step-link .step-right,.ap-step-link .step-left, .aps-date .tm-value,.step4-form .save ,.social-info .social li{
+                       background-color:#337ab7 !important;
+                   }
+                   .ap-dashboard .form-control:focus, .stp-duration li {
+                       border: 2px solid #337ab7 !important;
+                   }
+                   .stp-duration .tm-value {
+                       color: #337ab7 !important;
+                   }
+
+                   .app_logo img {
+                       height: 150px !important;
+                       width: 150px !important;
+                   }
+
+
+
+                   #ap_slots{
+                       width:24% !important;
+                   }
+
+                   .social-info {
+                       margin-top: 80px !important;
+                   }
+
+                   .pre_bg{
+                       background-color:white !important;
+                   }
+
+                   div#existing:focus ,div#new:focus {
+                       outline: none !important;
+                   }
+               </style>
+           </div>
+       </div>
+   </div>
+</div>

@@ -1,0 +1,19 @@
+.admin-bar {
+	.header {
+		&.inter {
+			.block-header {
+				top: 32px;
+			}
+		}
+
+		&.is-sticky {
+			.block-search {
+				top: 32px;
+			}
+		}
+
+		.block-header.is-sticky {
+			top: 32px;
+		}
+	}
+}

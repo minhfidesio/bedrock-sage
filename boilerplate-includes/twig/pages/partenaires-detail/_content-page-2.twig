@@ -1,0 +1,268 @@
+
+{#
+/**
+ * @file
+ *
+ * Available variables
+ * - project_name
+ * - project_short_name
+ * - css_files
+ * - js_files
+ * - html_files
+ * - favicon_url
+ * - img_url
+ * - lang_code
+ * - lang_code_extended
+ * - favicon_color
+ *
+ */
+#}
+
+<div class="block-content-page has-sidebar mt-0">
+   <div class="wrapper">
+       <div class="content-page">
+           <div class="editor-cms">
+               <h3><i class="i-plus-o"></i>En détail</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel purus ultricies est eleifend molestie eu quis risus. Donec venenatis, enim ultrices tempor cursus, enim turpis lobortis ex, nec pretium velit enim quis felis. Sed commodo nisl nisi, a aliquam mi congue in. Mauris non augue euismod, facilisis dui id, pharetra risus. Phasellus non odio in metus faucibus scelerisque id sit amet risus. Curabitur vel ultrices mauris, quis vehicula diam :</p>
+               <ul>
+                   <li>Lundi, mardi de 14h-17h</li>
+                   <li>Mercredi de 16h à 18h</li>
+                   <li>Vendredi de 13h à 15h</li>
+               </ul>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel purus ultricies est eleifend molestie eu quis risus. Donec venenatis, enim ultrices tempor cursus, enim turpis lobortis ex, nec pretium velit enim quis felis. Sed commodo nisl nisi, a aliquam mi congue in. Mauris non augue euismod, facilisis dui id, pharetra risus. Phasellus non odio in metus faucibus scelerisque id sit amet risus. Curabitur vel ultrices mauris, quis vehicula diam :</p>
+           </div>
+       </div>
+
+       <div class="sidebar">
+           {#<form action="#" method="post" class="form-partner">#}
+               {#<p class="title">Prise de rendez en ligne</p>#}
+               {#<div class="form-step is-active">#}
+                  {#<div class="form-group">#}
+                      {#<label for="">Motif du rendez-vous</label>#}
+                      {#<select name="" id="" class="select2">#}
+                          {#<option value="">Lorem ipsum</option>#}
+                          {#<option value="">Lorem ipsum 1</option>#}
+                          {#<option value="">Lorem ipsum 2</option>#}
+                      {#</select>#}
+                  {#</div>#}
+                   {#<div class="form-group">#}
+                       {#<label for="">Selectionner la date</label>#}
+                       {#<input type="text" placeholder="23/05/2019">#}
+                   {#</div>#}
+                   {#<a href="#" class="btn-default" tabindex="0"><i class="i-calendar"></i>Prendre rendez-vous</a>#}
+               {#</div>#}
+               {#<div class="form-step">#}
+                   {#<span class="icon"><i class="i-check"></i></span>#}
+                   {#<p class="des">Votre rendez-vous est bien enregistré pour le</p>#}
+                   {#<p class="datetime">Lundi 25 mai 2019</p>#}
+               {#</div>#}
+           {#</form>#}
+           <div class="form-partner">
+               <p class="title">Prise de rendez en ligne</p>
+               <div class="ap_wrapper1">
+                   <div id="img-thumbnail" class="img-thumbnail ap-dashboard ap-front">
+
+
+                       <div id="change-loader" class="change-loader">
+                           <div id="change-loader-inner"></div>
+                       </div>
+                       <div id="ap_fornt_main_div" style="">
+                           <div class="row ap-logo">
+
+                           </div>
+
+                           <!-- Step 2 -->
+                           <div id="step2" class="ap_class_active">
+                               <div id="form_02">
+
+                                   <form style="margin-bottom: 0;" action="" method="POST" id="appoint_time" name="appoint_time">
+                                       <input type="hidden" class="ap_location_id" name="ap_location_id" id="ap_location_id" value="2">
+                                       <div id="2" class="ap-steps-detail1">
+
+                                           <p>Sélectionner L'heure du rendez-vous</p>
+                                           <input type="hidden" id="appt_date_format" name="appt_date_format" value="">
+                                           <div class="row service-form">
+                                               <div class="swiper-container home-timing">
+                                                   <div class="swiper-wrapper ">
+                                                       <div class="swiper-slide">
+                                                           <div class="step-time">
+                                                               <div class="aps-date">
+                                                                   <label id="date_01" class="tm-value">Thu May 30 2019</label>
+                                                               </div>
+                                                               <ul class="stp-duration">
+
+                                                                   <li id="ap_slots" class="col-md-3 col-xs-6">
+                                                                       <input class="radio_button" title="10 h 00 min" value="10:00" id="radio10:00" type="radio" name="ap_time"><label for="radio10:00" id="tm-value" class="tm-value"><span id="time_value10:00"></span> 10 h 00 min</label>
+                                                                   </li>
+                                                                   <li id="ap_slots" class="col-md-3 col-xs-6">
+                                                                       <input class="radio_button" title="10 h 40 min" value="10:40" id="radio10:40" type="radio" name="ap_time"><label for="radio10:40" id="tm-value" class="tm-value"><span id="time_value10:40"></span> 10 h 40 min</label>
+                                                                   </li>
+                                                                   <li id="ap_slots" class="col-md-3 col-xs-6">
+                                                                       <input class="radio_button" title="11 h 20 min" value="11:20" id="radio11:20" type="radio" name="ap_time"><label for="radio11:20" id="tm-value" class="tm-value"><span id="time_value11:20"></span> 11 h 20 min</label>
+                                                                   </li>
+                                                                   <li id="ap_slots" class="col-md-3 col-xs-6">
+                                                                       <input class="radio_button" title="12 h 00 min" value="12:00" id="radio12:00" type="radio" name="ap_time"><label for="radio12:00" id="tm-value" class="tm-value"><span id="time_value12:00"></span> 12 h 00 min</label>
+                                                                   </li>
+                                                                   <li id="ap_slots" class="col-md-3 col-xs-6">
+                                                                       <input class="radio_button" title="12 h 40 min" value="12:40" id="radio12:40" type="radio" name="ap_time"><label for="radio12:40" id="tm-value" class="tm-value"><span id="time_value12:40"></span> 12 h 40 min</label>
+                                                                   </li>
+                                                                   <li id="ap_slots" class="col-md-3 col-xs-6">
+                                                                       <input class="radio_button" title="13 h 20 min" value="13:20" id="radio13:20" type="radio" name="ap_time"><label for="radio13:20" id="tm-value" class="tm-value"><span id="time_value13:20"></span> 13 h 20 min</label>
+                                                                   </li>
+                                                                   <li id="ap_slots" class="col-md-3 col-xs-6">
+                                                                       <input class="radio_button" title="15 h 20 min" value="15:20" id="radio15:20" type="radio" name="ap_time"><label for="radio15:20" id="tm-value" class="tm-value"><span id="time_value15:20"></span> 15 h 20 min</label>
+                                                                   </li>
+                                                                   <li id="ap_slots" class="col-md-3 col-xs-6">
+                                                                       <input class="radio_button" title="16 h 00 min" value="16:00" id="radio16:00" type="radio" name="ap_time"><label for="radio16:00" id="tm-value" class="tm-value"><span id="time_value16:00"></span> 16 h 00 min</label>
+                                                                   </li>
+                                                                   <li id="ap_slots" class="col-md-3 col-xs-6">
+                                                                       <input class="radio_button" title="16 h 40 min" value="16:40" id="radio16:40" type="radio" name="ap_time"><label for="radio16:40" id="tm-value" class="tm-value"><span id="time_value16:40"></span> 16 h 40 min</label>
+                                                                   </li>
+
+                                                               </ul>
+                                                           </div>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+
+                                       </div>
+                                       <!-- Step 2 -->
+                                       <div class="ap-step-link">
+
+                                           <button id="stepback2" href="#step1" type="button" onclick="return step2_back();" class="btn-step-left btn-default">Précédent</button>
+                                           <button id="stepnext2" type="button" onclick="return step2_next();" class="btn-step-right btn-default">Suivant</button>
+                                       </div>
+                                   </form>
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+
+               </div>
+               <style>
+                   #staff_off_text{
+                       color: #337ab7 !important;
+                   }
+
+                   .alert_box{
+                       background: #304CD8;
+                       background: -webkit-linear-gradient(left, #304CD8 0%, #9F3762 100%);
+                       background: -ms-linear-gradient(left, #304CD8 0%, #9F3762 100%);
+                       background: linear-gradient(to right, #304CD8 0%, #9F3762 100%);
+                       color: #fff;
+                       font-size: 25px;
+                       padding: 35px;
+                       text-align: center;
+                   }
+
+                   #dd-w-0 .dd-c .dd-s{
+                       background:#337ab7 !important;
+                   }
+                   .step3-form {
+                       min-height: 90px !important;
+                   }
+                   #date_01{
+                       height:70px !important;
+                       line-height: 70px;
+                       width: 100%;
+                       border-radius: 5px;
+                       text-align:center;
+                   }
+
+                   /*.ap-steps-detail1 p{
+                       float:left !important;
+                   }*/
+                   .ap-steps-detail1 p{
+                       padding-left: 20px;
+                       padding-right: 20px;
+                   }
+                   /*.ap-steps-detail3 p{
+                       float:left !important;
+                   }*/
+                   .ap-steps-detail3 p{
+                       padding-right: 20px;
+                       padding-left: 20px;
+                   }
+                   .swiper-container{
+                       overflow:visible !important;
+                   }
+                   .signup-info{
+                       clear:both !important;
+                   }
+                   .service_tag, .staff_tag, .date_tag, .service_price_tag, .time_tag {
+
+                       font-style: oblique !important;
+                   }
+                   #date_01{
+                       font-size:30px !important;
+                   }
+                   .b_closed{
+                       font-size:25px !important;
+                   }
+                   input[type="tel"]{
+                       padding-left: 50px !important;
+                   }
+                   #app_business_name{
+                       font-size:18px !important;
+                       padding-top:10px !important;
+                   }
+                   #appoint_register, #appoint_login{
+                       color: #fff !important;
+                       background-color: #f0ad4e !important;;
+                       border-color: #eea236 !important;;
+                   }
+
+                   #register_button{
+                       color: #fff !important;
+                       background-color: #c9302c !important;
+                       border-color: #ac2925 !important;
+                   }
+
+                   #login_button{
+                       color: #fff !important;
+                       background-color: #449d44 !important;
+                       border-color: #398439 !important;
+                   }
+                   #img-thumbnail img{
+                       transform: none !important;
+                       transition: none !important;
+                   }
+                   .ap-steps .active span , .ap-steps .complete span, .ap-step-link .step-right,.ap-step-link .step-left, .aps-date .tm-value,.step4-form .save ,.social-info .social li{
+                       background-color:#337ab7 !important;
+                   }
+                   .ap-dashboard .form-control:focus, .stp-duration li {
+                       border: 2px solid #337ab7 !important;
+                   }
+                   .stp-duration .tm-value {
+                       color: #337ab7 !important;
+                   }
+
+                   .app_logo img {
+                       height: 150px !important;
+                       width: 150px !important;
+                   }
+
+
+
+                   #ap_slots{
+                       width:24% !important;
+                   }
+
+                   .social-info {
+                       margin-top: 80px !important;
+                   }
+
+                   .pre_bg{
+                       background-color:white !important;
+                   }
+
+                   div#existing:focus ,div#new:focus {
+                       outline: none !important;
+                   }
+               </style>
+           </div>
+       </div>
+   </div>
+</div>

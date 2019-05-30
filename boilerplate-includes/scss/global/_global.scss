@@ -1,0 +1,158 @@
+body {
+	font-family: $font-1; //Default font family
+	color: $color5; //Default text color
+	letter-spacing: normal; //Default letter spacing
+	font-size: 15px; //Default font size
+	line-height: 1.1; //Default line height
+	transition: all 0.3s ease;
+
+	@media screen and (min-width: $tablet-medium + 1) {
+		font-size: 16px;
+	}
+}
+
+html,
+body {
+	&.disableScroll {
+		//position: fixed;
+		//overflow-y:scroll;
+		//width: 100%;
+		overflow: hidden;
+	}
+}
+
+.sr-only {
+	position: absolute;
+	font-size: 0;
+	height: 0;
+}
+
+/*-----------------------------------------------------*/
+/*--------------------   Outline  ---------------------*/
+/*-----------------------------------------------------*/
+*.is-focus{
+	outline: dotted 5px $color1 !important;
+	outline-offset: 5px;
+}
+
+/*-----------------------------------------------------*/
+/*--------------- -----   Title   ---------------------*/
+/*-----------------------------------------------------*/
+
+.title-1 {
+	color: $color3;
+	font-size: 34px;
+	font-weight: 700;
+
+	@media screen and (min-width: $tablet-medium + 1) {
+		font-size: 44px;
+	}
+}
+
+.title-2 {
+	color: $color5;
+	font-size: 30px;
+	font-weight: 700;
+
+	@media screen and (min-width: $tablet-medium + 1) {
+		font-size: 36px;
+	}
+}
+
+h2,
+.title-3 {
+	color: $color3;
+	font-size: 28px;
+	font-weight: 700;
+
+	@media screen and (min-width: $tablet-medium + 1) {
+		font-size: 32px;
+	}
+}
+
+.title-4 {
+	color: $color3;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 32px;
+}
+
+.title-5 {
+	color: $color3;
+	font-size: 30px;
+	font-weight: 700;
+
+	@media screen and (min-width: $tablet-medium + 1) {
+		font-size: 40px;
+	}
+}
+
+.title-6 {
+	color: $color3;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+}
+/*-----------------------------------------------------*/
+/*---------------------   Block   ---------------------*/
+/*-----------------------------------------------------*/
+
+.main {
+	> [class*='block-'] {
+		margin-top: 40px;
+
+		&.mt-0 {
+			margin-top: 0;
+		}
+	}
+}
+
+/*-----------------------------------------------------*/
+/*-------------------   loadmore   --------------------*/
+/*-----------------------------------------------------*/
+
+.loadmore {
+	text-align: center;
+	overflow: hidden;
+	margin-top: 60px;
+	min-height: 41px;
+
+	&.loadding {
+		a {
+			display: none;
+		}
+
+		&:after {
+			top: 20px;
+		}
+	}
+
+	a {
+		position: relative;
+		display: inline-block;
+
+		&:before {
+			content: '';
+			@include size(50vw, 1px);
+			background-color: $color6;
+			position: absolute;
+			right: calc(100% + 40px);
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&:after {
+			content: '';
+			@include size(50vw, 1px);
+			background-color: $color6;
+			position: absolute;
+			left: calc(100% + 40px);
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		i {
+			font-size: 40px;
+		}
+	}
+}
