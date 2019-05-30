@@ -11,6 +11,7 @@ Config::define('WP_DEBUG_DISPLAY', true);
 Config::define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
 Config::define('SCRIPT_DEBUG', true);
 
+error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Enable plugin and theme updates and installation from the admin
