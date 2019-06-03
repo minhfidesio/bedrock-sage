@@ -18,6 +18,18 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'	=> __('Code Placement', DOMAIN),
         'parent_slug'	=> 'default-theme-settings',
     ));
+
+    acf_add_options_sub_page(array(
+        'page_title' 	=> __('Edit content', DOMAIN),
+        'menu_title'	=> __('Edit content', DOMAIN),
+        'parent_slug'	=> 'default-theme-settings',
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title' 	=> __('Edit image', DOMAIN),
+        'menu_title'	=> __('Edit image', DOMAIN),
+        'parent_slug'	=> 'default-theme-settings',
+    ));
 }
 
 //load_json
@@ -33,3 +45,5 @@ function my_acf_json_load_point( $paths ) {
 }
 
 add_filter('acf/settings/load_json', 'my_acf_json_load_point');
+
+

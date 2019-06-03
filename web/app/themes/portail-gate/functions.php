@@ -9,3 +9,4 @@ include APP_PATH.'/inc/admin/functions.php';
 include APP_PATH.'/inc/frontend/functions.php';
 include APP_PATH.'/inc/ajax/functions.php';
 include APP_PATH.'/inc/plugins/acf/functions.php';
+include APP_PATH.'/inc/widget/functions.php';

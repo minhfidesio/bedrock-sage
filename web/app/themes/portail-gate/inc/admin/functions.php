@@ -49,7 +49,7 @@ function nelio_max_image_size( $file ) {
     $size = $size / 1024;
     $type = $file['type'];
     $is_image = strpos( $type, 'image' ) !== false;
-    $limit = 100;
+    $limit = 100000;
     $limit_output = '100kb';
     if ( $is_image && $size > $limit ) {
         $file['error'] = 'Image files must be smaller than ' . $limit_output;

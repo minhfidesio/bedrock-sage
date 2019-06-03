@@ -1,51 +1,11 @@
 {
-    "key": "group_5bc470bb6fb30",
-    "title": "Réglages du Site",
+    "key": "group_5cefa7273bfb4",
+    "title": "éditer l'image",
     "fields": [
         {
-            "key": "field_5bc4712889b29",
-            "label": "Header",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_5bc4715089b2a",
-            "label": "Logo",
-            "name": "default_logo",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "url",
-            "preview_size": "full",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": 2048,
-            "max_height": 2048,
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5cf4854232e4d",
-            "label": "Logo menu",
-            "name": "logo_menu",
+            "key": "field_5cefa72f7cd52",
+            "label": "Background feature",
+            "name": "background_feature",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -67,9 +27,57 @@
             "mime_types": ""
         },
         {
-            "key": "field_5cf4a9ae9baea",
-            "label": "Logo Footer",
-            "name": "logo_footer",
+            "key": "field_5cf48dfad1465",
+            "label": "Image menu",
+            "name": "image_menu",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5cf49d457d470",
+            "label": "Image feature 1",
+            "name": "image_feature_1",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5cf4a4d5ea8dc",
+            "label": "Image feature 2",
+            "name": "image_feature_2",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -96,7 +104,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "default-theme-settings"
+                "value": "acf-options-edit-image"
             }
         ]
     ],
@@ -108,5 +116,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1559538114
+    "modified": 1559536871
 }
