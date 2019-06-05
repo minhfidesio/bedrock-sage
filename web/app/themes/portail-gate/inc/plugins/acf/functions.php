@@ -30,6 +30,12 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'	=> __('Edit image', DOMAIN),
         'parent_slug'	=> 'default-theme-settings',
     ));
+
+    acf_add_options_sub_page(array(
+        'page_title' 	=> __('Logo client', DOMAIN),
+        'menu_title'	=> __('Logo client', DOMAIN),
+        'parent_slug'	=> 'default-theme-settings',
+    ));
 }
 
 //load_json

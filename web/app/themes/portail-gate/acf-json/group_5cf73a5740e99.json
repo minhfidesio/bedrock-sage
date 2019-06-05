@@ -1,0 +1,56 @@
+{
+    "key": "group_5cf73a5740e99",
+    "title": "i-clock",
+    "fields": [
+        {
+            "key": "field_5cf73a6abca50",
+            "label": "Time start",
+            "name": "time_start",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        },
+        {
+            "key": "field_5cf73ab5bca51",
+            "label": "Time end",
+            "name": "time_end",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i:s",
+            "return_format": "H:i:s"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "les_evenements"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1559706394
+}
