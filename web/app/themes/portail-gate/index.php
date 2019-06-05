@@ -66,13 +66,6 @@
             </div>
             <div class="list-events">
                 <?php
-                function custom_time($time){
-                    $time = str_replace(":00","",$time);
-                    if(strlen($time) == 2){
-                        $time = $time."h";
-                    }else $time = str_replace(":","h",$time);
-                    return $time;
-                }
                 query_posts(array(
                     'post_type' => 'les_evenements',
                     'showposts' => 3
@@ -80,7 +73,7 @@
                 while (have_posts()) : the_post(); ?>
                     <div class="item">
                         <div class="left">
-                            <div class="datetime"><span class="date"><?php echo get_the_time('d'); ?></span><span class="month"><?php echo strtoupper(get_the_date('M')); ?></span></div>
+                            <div class="datetime"><span class="date"><?php echo custom_day(get_field('date_event')); ?></span><span class="month"><?php echo strtoupper(substr(get_field('date_event'),0,3)); ?></span></div>
                         </div>
                         <div class="right">
                             <p class="title"><?php echo str_replace(' | ', '<br />', get_the_title()); ?></p>

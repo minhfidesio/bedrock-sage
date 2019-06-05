@@ -58,6 +58,27 @@ function nelio_max_image_size( $file ) {
 }
 //end nelio_max_image_size()
 
+//Custom format time
+function custom_time($time){
+    $time = str_replace(":00","",$time);
+    if(strlen($time) == 2){
+        $time = $time."h";
+    }else $time = str_replace(":","h",$time);
+    return $time;
+}
+//Custom format day
+function custom_day($day){
+    $start = strpos($day, " ");
+    $lent = strpos($day,",") - 4;
+    $day = substr( $day, $start, $lent);
+    if(strstr($day,",")){
+        $day = str_replace(",","",$day);
+        $day = str_replace(" ","",$day);
+        $day = "0".$day;
+    }
+    return $day;
+}
+
 add_action( 'admin_enqueue_scripts', 'load_admin_style' );
 add_action( 'login_enqueue_scripts', 'default_login_logo' );
 add_filter( 'login_headerurl', 'default_login_logo_url' );
