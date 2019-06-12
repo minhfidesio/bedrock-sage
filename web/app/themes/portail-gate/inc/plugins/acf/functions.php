@@ -1,5 +1,6 @@
 <?php if (! defined('APP_PATH')) die ('Bad requested!');
-
+global $acf_option;
+$acf_option = get_field('acf_option', 'option');
 /**
  * ACF Functions
  **/
@@ -50,7 +51,15 @@ function my_acf_json_load_point( $paths ) {
     return $paths;
 }
 
+//Google Maps API settings
+function my_acf_google_map_api( $api ){
+    global $acf_option;
+    $api['key'] = $acf_option['google_map_api_key'];
+    return $api;
+}
+
 add_filter('acf/settings/load_json', 'my_acf_json_load_point');
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 
 

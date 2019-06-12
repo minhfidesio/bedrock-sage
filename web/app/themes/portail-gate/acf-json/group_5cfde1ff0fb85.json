@@ -1,22 +1,22 @@
 {
-    "key": "group_5cefa7273bfb4",
-    "title": "éditer l'image",
+    "key": "group_5cfde1ff0fb85",
+    "title": "Partenaires",
     "fields": [
         {
-            "key": "field_5cefa72f7cd52__trashed",
-            "label": "Background feature",
-            "name": "background_feature",
+            "key": "field_5cfde206fd235",
+            "label": "Logo",
+            "name": "partenaires_logo",
             "type": "image",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "preview_size": "full",
+            "return_format": "id",
+            "preview_size": "medium_large",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -27,20 +27,20 @@
             "mime_types": ""
         },
         {
-            "key": "field_5cf48dfad1465__trashed",
-            "label": "Image menu",
-            "name": "image_menu",
+            "key": "field_5cfde249fd236",
+            "label": "Featured Image",
+            "name": "partenaires_featured_image",
             "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "preview_size": "full",
+            "return_format": "id",
+            "preview_size": "thumbnail",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -51,10 +51,10 @@
             "mime_types": ""
         },
         {
-            "key": "field_5cf49d457d470__trashed",
-            "label": "Image feature 1",
-            "name": "image_feature_1",
-            "type": "image",
+            "key": "field_5cfde274fd237",
+            "label": "Descriptions",
+            "name": "partenaires_descriptions",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -63,22 +63,17 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "preview_size": "full",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
-            "key": "field_5cf4a4d5ea8dc__trashed",
-            "label": "Image feature 2",
-            "name": "image_feature_2",
-            "type": "image",
+            "key": "field_5cfde29afd238",
+            "label": "Website",
+            "name": "partenaires_website",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -87,24 +82,16 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "preview_size": "full",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "post_type",
                 "operator": "==",
-                "value": "acf-options-edit-image"
+                "value": "partenaire"
             }
         ]
     ],
@@ -116,5 +103,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1560313862
+    "modified": 1560151698
 }

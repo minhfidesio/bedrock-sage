@@ -101,6 +101,7 @@
                 <?php $num_logo--; } ?>
             </div>
         </div>
+    </div>
 </main>
 <!--END  Pull HTML here-->
 <?php get_footer(); ?>

@@ -58,6 +58,38 @@ function nelio_max_image_size( $file ) {
 }
 //end nelio_max_image_size()
 
+/**
+ * Removing Saved Transients when a post is saved.
+ */
+function remove_cache_transients( $post_id, $post, $update ) {
+    $post_type = get_post_type($post_id);
+
+    if ( "evenement" == $post_type ) {
+        if ( (get_transient('pg_three_next_events')) != FALSE )
+            delete_transient('pg_three_next_events');
+
+        if ( (get_transient('pg_all_next_events')) != FALSE )
+            delete_transient('pg_all_next_events');
+
+        if ( (get_transient('pg_six_pass_events')) != FALSE )
+            delete_transient('pg_six_pass_events');
+    };
+
+    if ( "partenaire" == $post_type ) {
+        if ( (get_transient('pg_all_partenaires')) != FALSE )
+            delete_transient('pg_all_partenaires');
+
+        if ( (get_transient('pg_0_partenaires')) != FALSE )
+            delete_transient('pg_0_partenaires');
+
+        if ( (get_transient('pg_1_partenaires')) != FALSE )
+            delete_transient('pg_1_partenaires');
+
+        if ( (get_transient('pg_home_partenaires')) != FALSE )
+            delete_transient('pg_home_partenaires');
+    };
+    
+}
 //Custom format time
 function custom_time($time){
     $time = str_replace(":00","",$time);
@@ -86,3 +118,4 @@ add_filter( 'login_headertitle', 'default_login_logo_url_title' );
 add_filter('upload_mimes', 'cc_mime_types');
 if ( !ACF_SUPPORT ) add_action( 'admin_notices', 'acf_admin_notice__error' );
 add_filter( 'wp_handle_upload_prefilter', 'nelio_max_image_size' );
+add_action( 'save_post', 'remove_cache_transients', 10, 3 );

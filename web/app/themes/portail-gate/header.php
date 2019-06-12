@@ -66,94 +66,9 @@ if ( ACF_SUPPORT && get_field('after_opening_body', 'option') )
     the_field('after_opening_body', 'option');
 ?>
 
-<header id="header" class="header" role="banner">
-    <div class="block-header">
-        <div class="wrapper">
-            <a href="../home.html" class="logo" title="Portail Gate">
-                <img src="<?= DEFAULT_LOGO ?>" class="img" alt="Portail Gate logo" >
-                <img src="<?= get_field('logo_menu', 'option'); ?>" class="img-sticky" alt="Portail Gate logo">
-            </a>
-            <a href="#" class="btn-search-mobile" title="Recherche"><i class="i-search"></i></a>
-            <a href="#" class="btn-collapse" title="">
-                <span class="left"></span>
-                <span class="right"></span>
-                <span class="sr-only">Menu</span>
-            </a>
-
-            <div class="wrap-collapse">
-                <div class="feature" style="background-image: url('<?= get_field('image_menu', 'option'); ?>')"></div>
-
-                <nav class="main-nav" role="navigation">
-                    <div class="wrap">
-                        <a href="../html/home.html" class="logo-nav" title="Portail Gate"><img src="<?= get_field('logo_menu', 'option'); ?>" alt="Portail Gate logo"></a>
-                        <!--<ul class="main-menu">
-                            <li class="is-active"><a href="#">Accueil</a></li>
-                            <li><a href="#">Découvrir le GATE</a></li>
-                            <li><a href="#">Informations pratiques</a></li>
-                            <li><a href="#">Préparer son arrivée</a></li>
-                            <li><a href="#">Ils en parlent</a></li>
-                            <li><a href="#">Partenaires et RDV</a></li>
-                            <li><a href="#">Les évènements du GATE</a></li>
-                        </ul>-->
-                        <?php wp_nav_menu( array( 'main_menu' => 'Menu 1','menu_class'      => 'main-menu' ) );?>
-                        <div class="contact">
-                            <a href="#" class="help"><i class="i-question"></i><span>Aide</span></a>
-                            <a href="mailto:" class="mail"><i class="i-email"></i><span>Contact</span></a>
-
-                            <div class="multi-lang">
-                                <ul>
-                                    <li class="is-active fr"><a href="#">FR</a></li>
-                                    <li class="en"><a href="#">EN</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <ul class="site-info">
-                            <li><a href="#">Mention légales</a></li>
-                            <li>.</li>
-                            <li><a href="#">Chartes des données personnelles</a></li>
-                            <li>.</li>
-                            <li><a href="#">Plan du site</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <div class="block-banner">
-        <div class="wrapper">
-            <div class="content">
-                <h1 class="title-1"><?= get_field('title_1', 'option');?></h1>
-                <h2 class="title-2"><?= get_field('title_2', 'option');?></h2>
-                <div class="detail">
-                    <?= get_field('detail', 'option');?>
-                </div>
-                <div class="group-btn">
-                    <a href="#" class="btn-arrow">Découvrir le GATE <i class="i-arrow-right"></i></a>
-                    <a href="#" class="btn-arrow">Partenaires et RDV <i class="i-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="feature" style="background-image: url('<?= get_field('background_feature', 'option');?>')">
-            <div id="info" class="info">
-                <a href="#" class="btn-close" title="Close" data-close="#info"><i class="i-close"></i></a>
-                <span class="icon">
-                    <i class="i-alert"></i>
-                </span>
-                <p class="title">Flash Info</p>
-                <p class="des"><?= get_field('flash_info', 'option');?></p>
-            </div>
-        </div>
-    </div>
-    <div id="search" class="block-search">
-        <form action="#" class="form-default form-search" method="get">
-            <div class="input-wrap">
-                <input id="input-s" type="text" placeholder="Recherche" class="input-field">
-                <label class="input-label" for="input-s">
-                    <button class="btn-submit" type="submit"></button>
-                    <span class="input-label-content">Recherche</span>
-                </label>
-            </div>
-        </form>
-    </div>
-</header>
+<?php if ( is_front_page() ) : ?>
+    <?php get_template_part('template-parts/blocks/home/welcome') ?>
+<?php else : ?>
+    <?php get_template_part('template-parts/blocks/global/header-inter') ?>
+<?php endif; ?>
 
