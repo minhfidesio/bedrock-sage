@@ -19,7 +19,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": ""
+            "new_lines": "wpautop"
         },
         {
             "key": "field_5cfe095758ff8",
@@ -358,7 +358,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-templates\/home.php"
+                "value": "page-templates\/contact.php"
             }
         ]
     ],
@@ -370,5 +370,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1560314245
+    "modified": 1560402852
 }
