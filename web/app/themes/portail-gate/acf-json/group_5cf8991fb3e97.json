@@ -19,7 +19,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": ""
+            "new_lines": "wpautop"
         },
         {
             "key": "field_5cf899cfa7048",
@@ -367,12 +367,12 @@
                                 "id": ""
                             },
                             "choices": {
-                                "book: Book": "book: Book",
-                                "flask: Flask": "flask: Flask",
-                                "reading: Study": "reading: Study",
-                                "startup: Startup": "startup: Startup",
-                                "studyblack: Training": "studyblack: Training",
-                                "innovation: Innovation": "innovation: Innovation"
+                                "book": "Book",
+                                "flask": "Flask",
+                                "reading": "Study",
+                                "startup": "Startup",
+                                "studyblack": "Training",
+                                "innovation": "Innovation"
                             },
                             "default_value": [],
                             "allow_null": 0,
@@ -444,5 +444,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1559798412
+    "modified": 1560396834
 }
