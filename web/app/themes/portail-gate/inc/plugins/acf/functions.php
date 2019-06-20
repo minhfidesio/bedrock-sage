@@ -20,7 +20,7 @@ if( function_exists('acf_add_options_page') ) {
         'parent_slug'	=> 'default-theme-settings',
     ));
 
-    acf_add_options_sub_page(array(
+    /*acf_add_options_sub_page(array(
         'page_title' 	=> __('Edit content', DOMAIN),
         'menu_title'	=> __('Edit content', DOMAIN),
         'parent_slug'	=> 'default-theme-settings',
@@ -36,7 +36,7 @@ if( function_exists('acf_add_options_page') ) {
         'page_title' 	=> __('Logo client', DOMAIN),
         'menu_title'	=> __('Logo client', DOMAIN),
         'parent_slug'	=> 'default-theme-settings',
-    ));
+    ));*/
 }
 
 //load_json
