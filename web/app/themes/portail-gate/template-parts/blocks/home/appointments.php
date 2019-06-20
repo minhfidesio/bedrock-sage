@@ -8,13 +8,13 @@ if (($partenaires = get_transient('pg_home_partenaires')) === FALSE) :
         'post_type'         => 'partenaire',
         'posts_per_page'    => -1,
         'post_status'       => 'publish',
-        // 'meta_query' => array(
-        //     array(
-        //         'key'     => '_partner_location_id',
-        //         'value'   => '-1',
-        //         'compare' => '!=',
-        //     ),
-        // ),
+        'meta_query' => array(
+            array(
+                'key'     => '_partner_location_id',
+                'value'   => '-1',
+                'compare' => '!=',
+            ),
+        ),
     );
 
     $partenaires = new WP_Query($args);

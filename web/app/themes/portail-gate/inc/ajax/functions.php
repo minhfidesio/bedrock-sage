@@ -47,7 +47,7 @@ function load_data_partner_from_location() {
     $partenaireid =  $_POST['partenaireid'];
 
     $partenaireid = $partenaireid == -1 ? 'all' : $partenaireid;
-
+    
     ob_start();
 
     if ( ($partenaires = get_transient('pg_' . $partenaireid . '_partenaires')) === FALSE ) :
